@@ -5,6 +5,11 @@
           box-sizing: border-box;
 }
 
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0D1846), to(#861592));
+  background-image: linear-gradient(180deg, #0D1846 0%, #861592 100%);
+}
+
 .social {
   position: absolute;
   top: 18px;
@@ -17,9 +22,7 @@
 }
 
 .banner {
-  height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#0D1846), to(#861592));
-  background-image: linear-gradient(180deg, #0D1846 0%, #861592 100%);
+  padding-top: 42px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -67,30 +70,30 @@
 }
 
 .banner .item:nth-child(2) {
-  max-height: 483px;
+  margin-top: 72px;
+}
+
+@media (max-width: 600px) {
+  .banner .item:nth-child(2) {
+    margin-top: 52px;
+  }
 }
 
 .banner .item:nth-child(3) h1 {
-  padding: 50px 0;
   color: #fff;
   font-size: 3rem;
-  line-height: 1;
   width: 60%;
   text-align: center;
-  margin: 0 auto;
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  width: 100%;
 }
 
 @media (max-width: 600px) {
   .banner .item:nth-child(3) h1 {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
-}
-
-.banner .item:nth-child(3) h1 small {
-  font-size: 1.2rem;
-  line-height: 1.2;
-  margin-top: 15px;
-  display: block;
 }
 
 .swiper-container {
@@ -100,6 +103,5 @@
 .swiper-slide {
   color: #000;
   text-align: center;
-  padding: 100px 0px;
 }
 /*# sourceMappingURL=app.css.map */
