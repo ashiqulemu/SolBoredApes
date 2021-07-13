@@ -94,7 +94,7 @@ body {
   .banner .item:nth-child(3) h1 {
     font-size: 1.9rem;
     margin-top: 41px;
-    position: relative;
+    position: relative !important;
   }
 }
 
